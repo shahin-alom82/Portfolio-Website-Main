@@ -2,6 +2,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 import Container from "../Container/Container";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
+
 const About = () => {
       return (
             <div>

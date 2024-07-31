@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import LeftSiteNavbar from "../LeftSiteNavbar/LeftSiteNavbar";
 import RightSiteNabvar from "../RightSiteNabvar/RightSiteNabvar";
 import moment from "moment/moment";
-// import Marquee from 'react-fast-marquee';
+import Marquee from 'react-fast-marquee';
+
 
 const Banner = () => {
 
@@ -14,46 +15,44 @@ const Banner = () => {
 
             <div>
                   <LeftSiteNavbar></LeftSiteNavbar>
-                  <Container id="home" className="py-10 md:py-32 flex flex-col gap-4 lg:gap-4 lg:px-20">
+                  <Container id="home" className="py-10 md:py-32 flex flex-col gap-4 lg:gap-4 lg:px-20 md:px-32">
+
+                        <motion.div
+                         initial={{ y: 10, opacity: 0 }}
+                         animate={{ y: 0, opacity: 1 }}
+                         transition={{ duration: 0.5, delay: 0.7 }} 
+                        >
+                              <h1 className="text-2xl">{moment().format('MMMM D , YYYY / h:mm A')}</h1>
+                              <h1
+                                    className="lg:text-2xl text-[18px] font-bodyFont text-designColor mt-2">Hi, My Name is
+                              </h1>
+
+                              <h1
+                                    className="lg:text-6xl text-3xl font-bold mt-5">Shahin Alom.
+                              </h1>
+                              <div className="lg:text-6xl text-3xl font-semibold text-designColor mt-5">
+                                    <Typewriter
+                                          options={{
+                                                autoStart: true,
+                                                loop: true,
+                                                cursor: "|",
+                                                strings: stringValue,
+                                          }}
+                                    />
+                              </div>
+                              <p className="text-[18px] text-darkText mt-5 md:max-w-[850px]">I am a web developer with 4+ years of experience in React. I have a strong foundation in <br /> front-end & back-end development and am skilled in creating user-friendly and responsive <br /> web applications using React and its ecosystem. <span className="text-designColor underline"> Learn more</span></p>
+                              <button className="text-[16px] h-12 lg:w-[200px] w-52 border-2 hover:bg-hovarColor duration-500 border-designColor p-2 mt-8 rounded-lg text-designColor" >Click out my Projects!</button>
+                        </motion.div>
 
 
-                        <h1 className="text-2xl">{moment().format('MMMM D , YYYY / h:mm A')}</h1>
-
-                        <motion.h1
-                              initial={{ y: 10, opacity: 0 }}
-                              animate={{ y: 0, opacity: 1 }}
-                              transition={{ duration: 0.5, delay: 0.7 }}
-                              className="lg:text-2xl text-[18px] font-bodyFont text-designColor">Hi, My Name is
-                        </motion.h1>
 
 
 
 
-                        <motion.h1
-                              initial={{ y: 10, opacity: 0 }}
-                              animate={{ y: 0, opacity: 1 }}
-                              transition={{ duration: 0.5, delay: 0.7 }}
-                              className="lg:text-6xl text-3xl font-bold mt-2">Shahin Alom.
-
-                        </motion.h1>
-                        <div className="lg:text-6xl text-3xl font-semibold text-darkText">
-                              <Typewriter
-                                    options={{
-                                          autoStart: true,
-                                          loop: true,
-                                          cursor: "|",
-                                          strings: stringValue,
-                                    }}
-                              />
-                        </div>
-                        <p className="text-[18px] text-darkText md:max-w-[850px]">I am a web developer with 4+ years of experience in React. I have a strong foundation in <br /> front-end & back-end development and am skilled in creating user-friendly and responsive <br /> web applications using React and its ecosystem. <span className="text-designColor underline"> Learn more</span></p>
-                        <button className="text-[16px] h-12 lg:w-[200px] w-52 border-2 hover:bg-hovarColor duration-500 border-designColor p-2 mt-8 rounded-lg text-designColor" >Click out my Projects!</button>
-
-
-{/* 
-                        <div className="text-white text-center p-10 rounded-lg mt-6">
+                        
+                        <div className="text-yellow-100 text-center rounded-lg w-full">
                               <Marquee gradient={false}>
-                                    <div className="lg:text-3xl mx-8 cursor-pointer">
+                                    <div className="lg:text-[20px] cursor-pointer mt-3">
                                           <ul>
                                                 {[
                                                       "HTML-CSS",
@@ -70,7 +69,7 @@ const Banner = () => {
                                                 ].map((skill, index) => (
                                                       <li
                                                             key={index}
-                                                            className="inline-block px-6 py-3 mx-4 my-2 border-2 border-purple-700 rounded-lg text-text-1 font-medium hover:text-purple-700 transition-colors duration-500"
+                                                            className="inline-block px-6 py-2 mx-4 my-2 border-2 border-designColor rounded-lg text-text-1 font-medium hover:text-designColor transition-colors duration-500"
                                                       >
                                                             {skill}
                                                       </li>
@@ -78,7 +77,7 @@ const Banner = () => {
                                           </ul>
                                     </div>
                               </Marquee>
-                        </div> */}
+                        </div>
 
 
                   </Container>

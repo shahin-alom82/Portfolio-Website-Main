@@ -1,9 +1,10 @@
 
 const RightSiteNabvar = () => {
       return (
-            <div className="fixed top-0 -right-[90px] mt-[350px] transform rotate-90 z-30 hidden md:block">
+            <div className="fixed top-0 -right-[90px] mt-[300px] transform rotate-90 z-30 hidden md:block">
                   <a href="" className="block text-designColor py-2 rounded-lg">
                         <p className="text-[17px] tracking-widest">shahinalom3511371@gmail.com</p>
+
                   </a>
             </div>
 

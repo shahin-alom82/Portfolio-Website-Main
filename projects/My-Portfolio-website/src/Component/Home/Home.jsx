@@ -7,10 +7,11 @@ import Header from "../Header/Header";
 import OtherSection from "../Other/Other";
 import Projects from "../Projects/Projects";
 import ScrollBar from "../ScrollBar/ScrollBar";
+import Skils from "../Skils/Skils";
 
 const Home = () => {
       return (
-            <main className="font-fontFamily min-h-screen bg-primaryColor text-lightText" >
+            <main className="font-fontFamily min-h-screen  text-lightText" >
                   <Header />
                   <Banner />
                   <About />
@@ -18,8 +19,9 @@ const Home = () => {
                   <Projects />
                   <ScrollBar />
                   <OtherSection />
-                  <Email />
+                  <Skils/>
                   <Education />
+                  <Email />
                   {/* Archive */}
                   {/* Contact */}
                   {/* Leftsite */}

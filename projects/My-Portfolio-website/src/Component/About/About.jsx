@@ -6,7 +6,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 const About = () => {
       return (
             <div>
-                  <Container id="about" className="py-20 lg:px-20">
+                  <Container id="about" className="py-20 lg:px-20 md:px-32">
                         <SectionTitle titleNo={"01 ."} title={"About me"}></SectionTitle>
                         <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start">
                               <div className="lg:w-2/3 w-full">

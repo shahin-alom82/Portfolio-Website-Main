@@ -5,4 +5,13 @@
 .scrollBarHide::-webkit-scrollbar {
       display: none;
     }
-    
+
+
+    .banner {
+      background-image: url('./public/banner.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+ body {
+    background-image: url("https://i.ibb.co/Lt3Jb5D/bannerBg.jpg");
+  } 

@@ -8,7 +8,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Projects = () => {
       return (
-            <Container id={"projects"} className={"py-28"}>
+            <Container id={"projects"} className={"py-28 lg:px-0 md:px-32"}>
 
 
                   <div className="w-full flex justify-center lg:justify-start lg:ml-32">

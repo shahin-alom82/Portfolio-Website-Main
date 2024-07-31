@@ -4,7 +4,7 @@ import Container from '../Container/Container';
 
 const Fotter = () => {
       return (
-            <Container><footer className="mt-20 bg-opacity-5 bg-[#0a192f] rounded-full">
+            <Container><footer className="mt-20 bg-opacity-5 rounded-full lg:px-0 md:px-16">
                   <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                         <div className="sm:flex sm:items-center sm:justify-between">
                               <div>

@@ -1,103 +1,3 @@
-// import { motion } from "framer-motion";
-// import { useState } from "react";
-// import { FaBars, FaXmark } from "react-icons/fa6";
-// import { Link } from 'react-scroll';
-// const Header = () => {
-//       const [isOpen, setIsOpen] = useState(false);
-
-//       const toggleMenu = () => {
-//             setIsOpen(!isOpen);
-//       };
-
-//       const navLink = [
-//             { title: "Home", path: "home", value: "", },
-//             { title: "About", path: "about", value: "01.", delay: 0.1 },
-//             { title: "Experience", path: "experience", value: "02.", delay: 0.2 },
-//             { title: "Projects", path: "projects", value: "03.", delay: 0.3 },
-//             { title: "Contact", path: "contact", value: "04.", delay: 0.4 }
-//       ];
-
-
-//       return (
-//             <div className="h-20 shadow-lg shadow-hovarColor/10 px-4 lg:px-0 sticky top-0 z-50 bg-primaryColor font-bodyFont">
-//                   <div className="max-w-[1440px] mx-auto flex items-center justify-between h-full">
-//                         <img className="h-16 w-24 opacity-75 hover:opacity-100 duration-300 cursor-pointer" src="https://i.ibb.co/RvS6yBb/initial-letter-s-logo-company-name-simple-and-modern-logotype-design-for-business-and-company-identi.png" alt="Logo" />
-
-//                         <div className="hidden md:inline-flex items-center gap-10">
-//                               <ul className="flex text-[18px] gap-10">
-//                                     {navLink.map((item, index) => (
-//                                           <Link
-//                                                 to={item.path}
-//                                                 smooth={true}
-//                                                 duration={200}
-//                                                 offset={-80}
-//                                                 key={index}
-//                                                 className="font-medium hover:text-designColor duration-300 cursor-pointer"
-//                                           >
-//                                                 <motion.p
-//                                                       initial={{ y: -10, opacity: 0 }}
-//                                                       animate={{ y: 0, opacity: 1 }}
-//                                                       transition={{ duration: 0.1, delay: item.delay }}
-//                                                 >
-//                                                       <li>
-//                                                             <span className="text-designColor mr-2">{item.value}</span>
-//                                                             <span className="uppercase tracking-wide">{item.title}</span>
-//                                                       </li>
-//                                                 </motion.p>
-//                                           </Link>
-//                                     ))}
-//                               </ul>
-
-//                               <motion.a
-//                                     initial={{ opacity: 0 }}
-//                                     animate={{ opacity: 1 }}
-//                                     transition={{ delay: 0.5 }}
-//                               >
-//                                     <a href="">
-//                                           <button className="text-[18px] border border-designColor font-medium rounded-lg px-6 py-2 me-2 hover:bg-hovarColor cursor-pointer duration-300">
-//                                                 Resume
-//                                           </button>
-//                                     </a>
-//                               </motion.a>
-//                         </div>
-
-
-//                         <div className="md:hidden">
-//                               <FaBars onClick={toggleMenu} className="w-[2rem] h-[2rem] cursor-pointer text-designColor" />
-//                         </div>
-//                   </div>
-
-//                   {isOpen && (
-//                         <div className="fixed inset-0 z-[999] bg-[#09101a]">
-//                               <ul className="w-full h-full flex flex-col items-center justify-center space-y-4 sm:space-y-6 md:space-y-8">
-//                                     {navLink.map((item, index) => (
-//                                           <li key={index} className="nav-link text-[22px] text-white relative group ">
-//                                                 <Link
-//                                                       to={item.path}
-//                                                       smooth={true}
-//                                                       duration={200}
-//                                                       className="text-white hover:text-designColor duration-300"
-//                                                       onClick={toggleMenu}
-//                                                 >
-//                                                       {item.title}
-//                                                 </Link>
-//                                                 <div className="absolute bottom-0 h-[2px] left-0 w-[0px] group-hover:w-[60px] transition-all duration-500"></div>
-//                                           </li>
-//                                     ))}
-//                               </ul>
-//                               <div
-//                                     onClick={toggleMenu}
-//                                     className="absolute top-7 right-5 cursor-pointer text-designColor"
-//                               >
-//                                     <FaXmark size={32} />
-//                               </div>
-//                         </div>
-//                   )}
-//             </div>
-//       );
-// };
-
-// export default Header;
 
 
 import { Link } from "react-scroll";
@@ -110,9 +10,10 @@ const navLink = [
       { title: "Home", path: "home", value: "", },
       { title: "About", path: "about", value: "01", delay: 0.1 },
       { title: "Experience", path: "experience", value: "02", delay: 0.2 },
-      { title: "Education", path: "education", value: "03", delay: 0.2 },
-      { title: "Projects", path: "projects", value: "04", delay: 0.3 },
-      { title: "Contact", path: "email", value: "05", delay: 0.4 }
+      { title: "Education", path: "education", value: "03", delay: 0.3 },
+      { title: "Skils", path: "skils", value: "04", delay: 0.4 },
+      { title: "Projects", path: "projects", value: "05", delay: 0.5 },
+      { title: "Contact", path: "email", value: "06", delay: 0.6 }
 ];
 
 // https://i.ibb.co/HBwRZGd/s-letter-logo-design-letter-s-logo-design-logo-s-letter-with-golden-color-700-179383505-removebg-pre.png
@@ -126,7 +27,7 @@ const Header = () => {
             }
       };
       return (
-            <div className="h-20 shadow-lg shadow-designColor/10 px-4 lg:px-0 sticky top-0 z-50 bg-primaryColor">
+            <div className="h-20 shadow-lg shadow-designColor/10 px-4 lg:px-0 sticky top-0 z-50">
                   <div className="max-w-[1440px] mx-auto flex items-center h-full justify-between">
                         <img
                               src="https://i.ibb.co/xLCnM8z/letter-s-logo-design-for-business-and-company-identity-with-luxury-concept-free-vector-removebg-prev.png"
@@ -134,7 +35,7 @@ const Header = () => {
                               className="h-24 py-3 w-28 cursor-pointer"
                         />
                         <div className="hidden md:inline-flex items-center gap-7">
-                              <div className="flex text-[18px] gap-7">
+                              <div className="flex lg:text-[18px] text-xs lg:gap-7 gap-4">
                                     {navLink?.map((item) => (
                                           <Link
                                                 key={item?.title}
@@ -164,7 +65,7 @@ const Header = () => {
                                     transition={{ delay: 0.5 }}
                                     href="#"
                                     target="blank"
-                                    className="px-8 py-3 rounded-md font-medium text-designColor text-[16px] tracking-wider uppercase border border-designColor hover:bg-hoverColor duration-200"
+                                    className="lg:px-8 lg:py-3 px-4 py-1 rounded-md font-medium text-designColor lg:text-[16px] tracking-wider uppercase border border-designColor hover:bg-hoverColor duration-200"
                               >
                                     Resume
                               </motion.a>

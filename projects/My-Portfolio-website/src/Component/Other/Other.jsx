@@ -107,7 +107,7 @@ const OtherSection = () => {
 
       return (
             <Container >
-                  <div className="lg:mx-36 lg:ml-32">
+                  <div className="lg:mx-36 lg:px-0 md:px-32 lg:ml-32">
                         <div className="text-center justify-center font-bold">
                               <h1 className="text-3xl">Other Noteworthy Projects</h1>
                               <p className="text-designColor mt-2"> View the archive</p>
@@ -153,7 +153,7 @@ const OtherSection = () => {
                         <div className="mt-4 text-center">
                               <button
                                     onClick={toggleShowAll}
-                                    className="text-designColor border border-designColor px-8 mt-5 py-3 rounded-md text-center items-center duration-300 hover:bg-slate-700"
+                                    className="text-designColor border-2 border-designColor px-8 mt-5 py-3 rounded-md text-center items-center duration-300 hover:bg-slate-700"
                               >
                                     {showAll ? "Show Less" : "Show More"}
                               </button>

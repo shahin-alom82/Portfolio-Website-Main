@@ -49,7 +49,7 @@ const Experience = () => {
 
       return (
 
-            <Container id={"experience"}  className="max-w-3xl py-10 lg:py-32 gap-16 items-center">
+            <Container id={"experience"}  className="lg:max-w-3xl md:px-32 py-10 lg:py-32 gap-16 items-center">
                   <SectionTitle titleNo={"02 ."} title={"Where I have worked"}/>
                   <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
                         <ul className="md:w-32 flex flex-col">

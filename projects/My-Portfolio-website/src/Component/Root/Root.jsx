@@ -4,7 +4,7 @@ import Fotter from '../Footer/Footer';
 
 const Root = () => {
       return (
-            <div className='bg-[#0a192f]'>
+            <div>
                   <Outlet></Outlet>
                   <Fotter />
             </div>

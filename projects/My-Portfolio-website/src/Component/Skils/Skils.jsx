@@ -7,7 +7,7 @@ const Skils = () => {
 
             <Container id={"skils"} className={"lg:px-0 md:px-32 "}>
                   <div className="mx-[55px] lg:ml-[70px]">
-
+{/* <h1></h1> */}
 
                         <div className="text-center">
                               <h1 className="lg:text-5xl text-3xl font-bold  mt-32">My Skils</h1>

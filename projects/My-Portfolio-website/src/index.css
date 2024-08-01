@@ -4,14 +4,24 @@
 
 .scrollBarHide::-webkit-scrollbar {
       display: none;
+      background-color: white;
     }
 
 
-    .banner {
-      background-image: url('./public/banner.jpg');
-      background-size: cover;
-      background-position: center;
-    }
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #499bae;
+}
+
+
  body {
     background-image: url("https://i.ibb.co/Lt3Jb5D/bannerBg.jpg");
   } 

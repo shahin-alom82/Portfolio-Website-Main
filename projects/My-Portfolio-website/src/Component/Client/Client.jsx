@@ -47,7 +47,7 @@ const Client = () => {
     <Container>
       <div
         id="Reviews"
-        className="text-center mt-9 font-medium rounded-lg shadow-lg lg:px-20 md:px-32"
+        className="text-center mt-9 font-medium rounded-lg lg:px-20 md:px-32"
       >
         <h2 className="lg:text-4xl font-bold mb-4">
           What Our Client Say
@@ -57,7 +57,7 @@ const Client = () => {
             {reviews.map((review, index) => (
               <motion.div
                 key={index}
-                className="inline-block w-72 h-52 px-6 py-4 mx-4 my-2 border-2 border-designColor rounded-lg bg-slate-950 bg-opacity-45 text-designColor shadow-md"
+                className="inline-block w-72 h-52 px-6 py-4 mx-4 my-2 border-2 border-designColor rounded-lg bg-slate-950 bg-opacity-45 text-designColor"
                 variants={reviewVariants}
                 initial="hidden"
                 animate="visible"

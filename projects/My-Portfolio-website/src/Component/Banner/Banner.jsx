@@ -7,8 +7,13 @@ import moment from "moment/moment";
 import Marquee from 'react-fast-marquee';
 
 
-const Banner = () => {
 
+
+const Banner = () => {
+      const reviewVariants = {
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+      };
       const stringValue = ["I build Things for wait", "Fontend Developer"]
 
       return (
@@ -18,9 +23,9 @@ const Banner = () => {
                   <Container id="home" className="py-10 md:py-32 flex flex-col gap-4 lg:gap-4 lg:px-20 md:px-32">
 
                         <motion.div
-                         initial={{ y: 10, opacity: 0 }}
-                         animate={{ y: 0, opacity: 1 }}
-                         transition={{ duration: 0.5, delay: 0.7 }} 
+                              initial={{ y: 10, opacity: 0 }}
+                              animate={{ y: 0, opacity: 1 }}
+                              transition={{ duration: 0.5, delay: 0.7 }}
                         >
                               <h1 className="text-2xl">{moment().format('MMMM D , YYYY / h:mm A')}</h1>
                               <h1
@@ -49,7 +54,7 @@ const Banner = () => {
 
 
 
-                        
+
                         <div className="text-yellow-100 text-center rounded-lg w-full">
                               <Marquee gradient={false}>
                                     <div className="lg:text-[20px] cursor-pointer mt-3">
@@ -67,12 +72,16 @@ const Banner = () => {
                                                       "Firebase",
                                                       "Vercel",
                                                 ].map((skill, index) => (
-                                                      <li
+                                                      <motion.li
                                                             key={index}
                                                             className="inline-block px-6 py-2 mx-4 my-2 border-2 border-designColor rounded-lg text-text-1 font-medium hover:text-designColor transition-colors duration-500"
+                                                            variants={reviewVariants}
+                                                            initial="hidden"
+                                                            animate="visible"
+                                                            transition={{ duration: 0.5, delay: index * 0.1 }}
                                                       >
                                                             {skill}
-                                                      </li>
+                                                      </motion.li>
                                                 ))}
                                           </ul>
                                     </div>

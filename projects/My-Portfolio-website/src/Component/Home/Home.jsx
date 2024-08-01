@@ -1,5 +1,6 @@
 import About from "../About/About";
 import Banner from "../Banner/Banner";
+import Client from "../Client/Client";
 import Education from "../Education/Education";
 import Email from "../Email/Email";
 import Experience from "../Experience/Experience";
@@ -17,6 +18,7 @@ const Home = () => {
                   <About />
                   <Experience />
                   <Projects />
+                  <Client/>
                   <ScrollBar />
                   <OtherSection />
                   <Skils/>

@@ -10,7 +10,7 @@ const Skils = () => {
 {/* <h1></h1> */}
 
                         <div className="text-center">
-                              <h1 className="lg:text-5xl text-3xl font-bold  mt-32">My Skils</h1>
+                              <h1 className="lg:text-4xl text-3xl font-bold  mt-32">My Skils</h1>
                               <p className="text-xl border-b border-designColor mb-2 py-6 text-darkText">We put your ideas and thus your wishes in the form of a unique web project
                                     <br />
                                     that inspires you and you customers.</p>

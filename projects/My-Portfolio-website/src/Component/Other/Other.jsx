@@ -109,7 +109,7 @@ const OtherSection = () => {
             <Container >
                   <div className="lg:mx-36 lg:px-0 md:px-32 lg:ml-32">
                         <div className="text-center justify-center font-bold">
-                              <h1 className="text-3xl">Other Noteworthy Projects</h1>
+                              <h1 className="lg:text-4xl mt-28">Other Noteworthy Projects</h1>
                               <p className="text-designColor mt-2"> View the archive</p>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto font-bodyFont mt-10">

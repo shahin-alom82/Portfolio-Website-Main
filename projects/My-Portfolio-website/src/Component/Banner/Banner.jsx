@@ -45,7 +45,7 @@ const Banner = () => {
                                           }}
                                     />
                               </div>
-                              <p className="text-[18px] text-darkText mt-5 md:max-w-[850px]">I am a web developer with 4+ years of experience in React. I have a strong foundation in <br /> front-end & back-end development and am skilled in creating user-friendly and responsive <br /> web applications using React and its ecosystem. <span className="text-designColor underline"> Learn more</span></p>
+                              <p className="text-[18px] text-darkText mt-5 md:max-w-[850px]">I am a web developer with 4+ years of experience in React. I have a strong foundation in <br /> front-end & back-end development and am skilled in creating user-friendly and responsive <br /> web applications using React and its ecosystem. <span className="text-designColor underline">Learn more</span></p>
                               <button className="text-[16px] h-12 lg:w-[200px] w-52 border-2 hover:bg-hovarColor duration-500 border-designColor p-2 mt-8 rounded-lg text-designColor" >Click out my Projects!</button>
                         </motion.div>
 

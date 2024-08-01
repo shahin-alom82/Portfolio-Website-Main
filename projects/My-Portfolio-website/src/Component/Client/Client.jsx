@@ -47,7 +47,7 @@ const Client = () => {
     <Container>
       <div
         id="Reviews"
-        className="text-center mt-9 font-medium rounded-lg shadow-lg"
+        className="text-center mt-9 font-medium rounded-lg shadow-lg lg:px-20 md:px-32"
       >
         <h2 className="lg:text-4xl font-bold mb-4">
           What Our Client Say

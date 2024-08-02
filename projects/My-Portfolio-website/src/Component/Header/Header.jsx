@@ -27,7 +27,7 @@ const Header = () => {
             }
       };
       return (
-            <div className="h-20 shadow-lg shadow-designColor/10 px-4 lg:px-0 sticky top-0 z-50">
+            <div className="h-20 shadow-lg shadow-designColor/10 px-4 lg:px-6 sticky top-0 z-50 bg-gray-900 bg-opacity-35">
                   <div className="max-w-[1440px] mx-auto flex items-center h-full justify-between">
                         <img
                               src="https://i.ibb.co/xLCnM8z/letter-s-logo-design-for-business-and-company-identity-with-luxury-concept-free-vector-removebg-prev.png"

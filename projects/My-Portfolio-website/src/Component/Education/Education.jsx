@@ -2,7 +2,7 @@ import Container from "../Container/Container";
 
 const Education = () => {
       return (
-            <Container id={"education"}  className="lg:p-0 p-5 lg:mx-[430px] mt-28 lg:px-0 md:px-32 ">
+            <Container id={"education"}  className="lg:p-0 p-5 mt-28 lg:px-64 md:px-32">
                   <div>
                         <div className="text-center">
                               <h1 className="lg:text-5xl text-3xl font-semibold">Education</h1>

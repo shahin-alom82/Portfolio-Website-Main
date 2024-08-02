@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.scrollBarHide::-webkit-scrollbar {
-      display: none;
-      background-color: white;
-    }
 
 
 /* Scrollbar */

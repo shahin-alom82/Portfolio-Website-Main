@@ -7,11 +7,10 @@ const Skils = () => {
 
             <Container id={"skils"} className={"lg:px-0 md:px-32 "}>
                   <div className="mx-[55px] lg:ml-[70px]">
-{/* <h1></h1> */}
 
                         <div className="text-center">
-                              <h1 className="lg:text-4xl text-3xl font-bold  mt-32">My Skils</h1>
-                              <p className="text-xl border-b border-designColor mb-2 py-6 text-darkText">We put your ideas and thus your wishes in the form of a unique web project
+                              <h1 className="lg:text-5xl text-3xl font-bold  mt-32">My Skils</h1>
+                              <p className="text-xl mt-3 text-darkText">We put your ideas and thus your wishes in the form of a unique web project
                                     <br />
                                     that inspires you and you customers.</p>
                         </div>
@@ -20,7 +19,7 @@ const Skils = () => {
 
 
                         {/* Cart Section */}
-                        <div className="grid lg:grid-cols-5 md:grid-cols-2 space-y-12 gap-4 lg:ml-8 mt-10">
+                        <div className="grid lg:grid-cols-5 md:grid-cols-2 space-y-12 gap-4">
 
 
 
